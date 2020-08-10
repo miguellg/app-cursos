@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Platform, AlertController } from 'ionic-angular';
 import { Firebase } from '@ionic-native/firebase'
 
 @Injectable()
 export class PushNotifyProvider {
 
-  constructor(public fb:  Firebase, public platform: Platform) {    
+  constructor(public fb:  Firebase, public platform: Platform, public alertCtrl: AlertController,) {    
   }
 
   getToken(): Promise<string> {    
@@ -25,8 +25,15 @@ export class PushNotifyProvider {
   }
 
   controlNoty() {
-    this.fb.onNotificationOpen().subscribe(noti => {
+    this.fb.onNotificationOpen().subscribe((noti: any) => {
       console.log(noti)
-    });
+     
+      
+        const alert = this.alertCtrl.create({
+            title: noti.title,
+            message: noti.body,
+            buttons: ['Ok']
+        }).present();
+    }    
   }
 }
