@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="ilog">
+    <ion-title>Matricula</ion-title>
+    <ion-title>{{curso}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="form.nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Idade</ion-label>
+      <ion-input type="number" [(ngModel)]="form.idade"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Telefone</ion-label>
+      <ion-input type="tel" [(ngModel)]="form.fone"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>E-mail</ion-label>
+      <ion-input type="email" [(ngModel)]="form.email"></ion-input>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+    <button ion-button full large color="ilog" (click)="handleSubmit()">
+        <ion-icon name="checkmark-circle-outline" padding></ion-icon>
+      Gravar
+    </button>
+</ion-footer>

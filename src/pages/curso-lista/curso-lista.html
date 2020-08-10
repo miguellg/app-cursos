@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar color="ilog">
+    <ion-title>Cursos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let item of itens" (click)="matricular(item)">
+      <h2>{{item.titulo}}</h2>
+      <p>{{item.descricao}}</p>
+    </button>
+  </ion-list>
+</ion-content>
