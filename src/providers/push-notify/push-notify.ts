@@ -23,4 +23,10 @@ export class PushNotifyProvider {
       })
     })
   }
+
+  controlNoty() {
+    this.fb.onNotificationOpen().subscribe(noti => {
+      console.log(noti)
+    });
+  }
 }

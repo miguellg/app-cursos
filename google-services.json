@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "995848266420",
+    "firebase_url": "https://diversos-bde35.firebaseio.com",
+    "project_id": "diversos-bde35",
+    "storage_bucket": "diversos-bde35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995848266420:android:ab36408669b7bcf561ede1",
+        "android_client_info": {
+          "package_name": "br.poa.miguelgarcia.cursosmg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995848266420-gmfprq0hbogv0hnuhrustkphbt726ksr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA56iABizINAJwo_7PkWESznv7sVXs4f9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "995848266420-gmfprq0hbogv0hnuhrustkphbt726ksr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
