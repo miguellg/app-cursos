@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Injectable()
 export class ApiProvider {
 
-  endpoint: string = 'http://localhost:3333/'
+  endpoint: string = 'https://cursosmg.herokuapp.com'
 
   constructor(public http: HttpClient) {
     

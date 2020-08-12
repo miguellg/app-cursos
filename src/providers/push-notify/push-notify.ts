@@ -34,6 +34,6 @@ export class PushNotifyProvider {
             message: noti.body,
             buttons: ['Ok']
         }).present();
-    }    
+    })    
   }
 }

@@ -34,7 +34,7 @@ export class CursoFormPage {
         token: tk,
         curso: this.form.curso
       }).subscribe((res) => {
-
+        console.log(res);
         this.alert.create({
           title: 'Parabéns!!',
           subTitle: 'Matricula realizada com sucesso!',
@@ -44,7 +44,7 @@ export class CursoFormPage {
               this.navCtrl.push(CursoListaPage)
             }
           }]
-        })
+        }).present()
       }, error => {
         this.alert.create({
           title: 'Ops!!',
